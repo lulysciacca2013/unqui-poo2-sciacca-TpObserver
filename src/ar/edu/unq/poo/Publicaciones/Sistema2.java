@@ -3,22 +3,22 @@ package ar.edu.unq.poo.Publicaciones;
 import java.util.ArrayList;
 import java.util.Observable;
 
-public class Sistema extends Observable {
+public class Sistema2 extends Observable {
 	
 	private ArrayList <Articulo> articulo;
 	private ArrayList <Investigador> investigador;
 	
-	public Sistema() {
+	public Sistema2() {
 		
 		articulo = new ArrayList<Articulo>();
 	}
 
 	public void suscribirInvestigador(Investigador investigador) {
-		this.getInvestigador().add(investigador);
+		this.investigador.add(investigador);
 	}
 	
 	public void desuscribirInvestigador(Investigador investigador) {
-		this.getInvestigador().remove(investigador);
+		this.investigador.remove(investigador);
 	}
 	
 	

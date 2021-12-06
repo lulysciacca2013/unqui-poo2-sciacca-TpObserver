@@ -8,7 +8,7 @@ import java.util.Observer;
 public   class Investigador implements Observer{
 	
 	private ArrayList<String> temaDeInteres;
-	private Sistema sistema;
+	private Sistema2 sistema;
 
 	public Investigador() {
 		this.temaDeInteres= getTemaDeInteres();
@@ -27,7 +27,7 @@ public   class Investigador implements Observer{
 		this.getTemaDeInteres().add(temas);
 	}
 	
-	public void suscribir (Sistema sistema) {
+	public void suscribir (Sistema2 sistema) {
 		sistema.addObserver(this);
 	}
 	

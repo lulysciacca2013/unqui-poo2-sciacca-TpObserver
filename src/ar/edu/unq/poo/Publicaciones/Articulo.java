@@ -1,16 +1,17 @@
 package ar.edu.unq.poo.Publicaciones;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Articulo {
 	private String titulo;
-	private ArrayList <String> autores;
+	private List <String> autores;
 	private String filiacion;
 	private String tipo;
 	private String lugar;
-	private ArrayList <String> palabrasClave;
+	private List <String> palabrasClave;
 	
-	public Articulo(String titulo,ArrayList <String> autores,String filiacion,String tipo,String lugar,ArrayList <String> palabras) {
+	public Articulo(String titulo,List <String> autores,String filiacion,String tipo,String lugar,List <String> palabras) {
 		this.titulo= titulo;
 		this.autores= autores;
 		this.filiacion=filiacion;
@@ -27,11 +28,11 @@ public class Articulo {
 		this.titulo = titulo;
 	}
 
-	public ArrayList<String> getAutores() {
+	public List<String> getAutores() {
 		return autores;
 	}
 
-	public void setAutores(ArrayList<String> autores) {
+	public void setAutores(List<String> autores) {
 		this.autores = autores;
 	}
 
@@ -59,11 +60,11 @@ public class Articulo {
 		this.lugar = lugar;
 	}
 
-	public ArrayList<String> getPalabrasClave() {
+	public List<String> getPalabrasClave() {
 		return palabrasClave;
 	}
 
-	public void setPalabrasClave(ArrayList<String> palabrasClave) {
+	public void setPalabrasClave(List<String> palabrasClave) {
 		this.palabrasClave = palabrasClave;
 	}
 	
